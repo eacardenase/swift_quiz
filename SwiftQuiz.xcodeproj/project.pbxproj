@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A58310CE2DD925A300B7D06F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A58310CD2DD925A300B7D06F /* README.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A58310B02DD9239C00B7D06F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		A58310992DD9239900B7D06F /* SwiftQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58310AF2DD9239C00B7D06F /* SwiftQuizTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftQuizTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A58310B92DD9239C00B7D06F /* SwiftQuizUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftQuizUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58310CD2DD925A300B7D06F /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -88,6 +93,7 @@
 		A58310902DD9239900B7D06F = {
 			isa = PBXGroup;
 			children = (
+				A58310CD2DD925A300B7D06F /* README.md */,
 				A583109B2DD9239900B7D06F /* SwiftQuiz */,
 				A58310B22DD9239C00B7D06F /* SwiftQuizTests */,
 				A58310BC2DD9239C00B7D06F /* SwiftQuizUITests */,
@@ -225,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58310CE2DD925A300B7D06F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
