@@ -43,6 +43,18 @@ class ViewController: UIViewController {
         return button
     }()
     
+    let questions = [
+        "What is 7+7?",
+        "What is the capital of Vermont?",
+        "What is cognac made from?"
+    ]
+    let answers = [
+        "14",
+        "Montpelier",
+        "Grapes"
+    ]
+    var currentQuestionIndex: Int = 0
+    
     private func setupUI() {
         questionLabel.translatesAutoresizingMaskIntoConstraints = false
         questionButton.translatesAutoresizingMaskIntoConstraints = false
@@ -87,10 +99,21 @@ class ViewController: UIViewController {
 
 extension ViewController {
     @objc func showNextQuestion(_ sender: UIButton) {
-        print("DEBUG: showNextQuestion tapped")
+        currentQuestionIndex += 1
+        
+        if currentQuestionIndex == questions.count {
+            currentQuestionIndex = 0
+        }
+        
+        let question = questions[currentQuestionIndex]
+        
+        questionLabel.text = question
+        answerLabel.text = "???"
     }
     
     @objc func showAnswer(_ sender: UIButton) {
-        print("DEBUG: showAnswer tapped")
+        let answer = answers[currentQuestionIndex]
+        
+        answerLabel.text = answer
     }
 }
