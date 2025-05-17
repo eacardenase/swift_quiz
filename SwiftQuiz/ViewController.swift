@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         
         button.setTitle("Next Question", for: .normal)
+        button.addTarget(self, action: #selector(showNextQuestion), for: .touchUpInside)
         
         return button
     }()
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
         let button = UIButton(type: .system)
         
         button.setTitle("Show Answer", for: .normal)
+        button.addTarget(self, action: #selector(showAnswer), for: .touchUpInside)
         
         return button
     }()
@@ -81,3 +83,14 @@ class ViewController: UIViewController {
 
 }
 
+// MARK: - Actions
+
+extension ViewController {
+    @objc func showNextQuestion(_ sender: UIButton) {
+        print("DEBUG: showNextQuestion tapped")
+    }
+    
+    @objc func showAnswer(_ sender: UIButton) {
+        print("DEBUG: showAnswer tapped")
+    }
+}
