@@ -90,6 +90,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        questionLabel.text = questions[currentQuestionIndex]
     }
 
 
